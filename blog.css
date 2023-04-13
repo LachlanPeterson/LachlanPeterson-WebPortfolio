@@ -1,0 +1,45 @@
+/* Main Content Component */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    display: block;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Nav bar */
+
+/* Blog Preview Section */
+
+.blog-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 4px solid #3B3C36;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 80%;
+}
+
+.blog-previews figure {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.blog-previews img {
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid #EB9C5C;
+}

@@ -1,0 +1,15 @@
+/* Blog nav Bar */
+#blog-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    border: 2px solid #EB9C5C;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+#blog-nav a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
