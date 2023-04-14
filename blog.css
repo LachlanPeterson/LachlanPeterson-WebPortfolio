@@ -28,6 +28,7 @@ section {
     border-radius: 0.5rem;
     margin: 1rem;
     width: 80%;
+    
 }
 
 .blog-previews figure {
@@ -40,6 +41,7 @@ align-items: center;
 
 .blog-previews img {
     width: 50%;
+    max-width: 700px;
     border-radius: 50%;
     border: 2px solid #EB9C5C;
 }
