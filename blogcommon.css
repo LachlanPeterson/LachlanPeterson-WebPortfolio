@@ -4,13 +4,28 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 80%;
-    /* max-width: 1000px; */
-    border: 2px solid #EB9C5C;
-    border-radius: 0.5rem;
     padding: 0.5rem 0.5rem;
     margin: 1rem 0 0;
+    border: 2px solid #EB9C5C;
+    background: #EB9C5C;
+    border-radius: 0.5rem;
 }
 #blog-nav a {
+    color: white;
     text-decoration: none;
-    margin: 0 0.25rem;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+#blog-nav a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 550px) {
+    #blog-nav {
+        max-width: 800px;
+    }
 }
