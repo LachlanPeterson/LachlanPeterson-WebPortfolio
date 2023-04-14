@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;600;700&family=Rubik:wght@300;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -34,9 +35,10 @@ nav {
 }
 
 nav a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: black;
 }
 
@@ -46,6 +48,14 @@ nav a {
 }
 
 /* Main Component  */
+p, a, h1, h2, h3, figcaption {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
 /* Hero Component */
 
 /* Social links Component */
@@ -58,9 +68,9 @@ nav a {
 }
 
 #social-links p {
-    /* font-family: 'Arial', Helvetica, sans-serif; */
     color:black;
     font-size: 1rem;
+    font-weight: bold;
     margin-bottom: 1rem;
     
 }
@@ -78,14 +88,13 @@ nav a {
 /* Footer Component */
 footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: .5rem;
     margin: .25rem 0 0;
     background:#3B3C36;
 }
 
 footer p {
-    /* font-family: ; */
-    font-size: 1.25rem;
+    font-size: .9rem;
     color: whitesmoke;
 }
 
