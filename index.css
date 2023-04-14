@@ -8,22 +8,23 @@
     margin: 1rem;
 }
 
-#hero h1, h2 {
+#hero h1, #hero h2 {
     font-family: 'Rubik', sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #hero h1 {
     color: #53917E;
 }
-#hero h2, p {
-    color: #4C6E64;   
+#hero h2 {
+    color: #4C6E64;  
 }
 
 #hero p {
      font-size: 1rem;
      font-weight: normal;
      margin: 1rem;
+     color: #4C6E64; 
 }
 #hero a {
     font-family: 'Poppins', sans-serif;

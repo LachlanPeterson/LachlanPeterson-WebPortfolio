@@ -56,6 +56,23 @@ p {
     margin-bottom: 0.5rem;
 }
 
+/* Titles for Each page */
+#page-titles h1 {
+    font-family: 'Rubik', sans-serif;
+    color: #53917E;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#page-titles h2 {
+    font-family: 'Rubik', sans-serif;
+    color: #4C6E64;
+    font-size: 1.5rem; 
+    margin-bottom: 1rem;
+    text-align:center;
+}
+
 /* Hero Component */
 
 /* Social links Component */
