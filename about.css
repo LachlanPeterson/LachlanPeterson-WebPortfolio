@@ -1,8 +1,98 @@
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+#about-rows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 5
+}
+
+/* Figure */
+#about-figure {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
 #about-figure img {
-    width: 50%;
+    width: 100%;
+    max-width: 500px;
     border-radius:5%;
+}
+#about-figure figcaption {
+    padding: 0 1.5rem;
+    text-align: center;
+}
+
+/* Further Information */
+
+.info-bar {
+    padding: 1rem 1rem 0 0;
+    border-left: 1px solid black;
+    padding-left: 0.5rem;
+}
+
+.info-bar img {
+    max-width: 40px;
+}
+
+/* Content order */
+#about-content {
+    order: 1;
+}
+#about-info {
+    order: 2;
 }
 
 #about-info img {
     width: 2rem;
+}
+
+/* *** Tablet *** */
+
+
+/* *** Desktop *** */
+@media only screen and (min-width: 1000px) {
+    main {
+        margin: 0 auto 5rem;
+        max-width: 80%;
+    }
+    #about-rows {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        
+    }
+    #about-info {
+        width: 35%;
+        min-width: 35%;
+        order: 0;
+        padding: 1rem 0;
+    }
+    #about-content {
+        width: 65%;
+        padding: 1rem 0;
+    }   
+}
+@media only screen and (min-width: 1300px) {
+#about-info {
+    width: 25%;
+    min-width: 25%;
+    order: 0;
+    padding: 1rem 0;
+}
+#about-content {
+    width: 75%;
+    padding: 1rem 0;
+}   
 }

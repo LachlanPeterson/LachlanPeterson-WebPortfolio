@@ -16,25 +16,27 @@ header {
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0 1.5rem;
+    padding: 1rem 0;
     background: #53917E;
 }
 
 #branding {
-    width: 50px;
-    /* width: 50%; */
-    margin-bottom: 1.5rem;
-    
+    width: 30%; 
 }
 
-nav {
+#logo-home {
+    text-align: center;
+}
+
+header nav {
     display: flex;
     justify-content: space-around;
     width:100%;
+    margin: 1rem 0 0;
     
 }
 
-nav a {
+header nav a {
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
     /* font-weight: bold; */
     text-decoration: none;
@@ -52,11 +54,11 @@ p, a, h1, h2, h3, figcaption {
     font-family: 'Poppins', sans-serif;
 }
 
-p {
+/* p {
     margin-bottom: 0.5rem;
-}
+} */
 
-/* Titles for Each page */
+    /* Titles for Each page */
 #page-titles h1 {
     font-family: 'Rubik', sans-serif;
     color: #53917E;
@@ -115,3 +117,40 @@ footer p {
     color: whitesmoke;
 }
 
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 550px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+    }
+    #logo-home {
+        
+        text-align: left;
+        width: 12.5%;
+    }
+
+    #branding {
+        margin-left: 1rem;
+        width: 100%;
+        max-width: 80px;
+        
+    }
+    header nav {
+        margin-top: 0;
+    }
+}
+
+/* *** DESKTOP STYLES *** */
+@media only screen and (min-width: 1000px) {
+    header {
+        justify-content: space-between;
+    }
+    header nav {
+        width: auto;
+    }
+    header nav a {
+        margin-right: 1rem;
+    }
+}

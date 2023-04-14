@@ -1,6 +1,13 @@
 
 /* Hero Component */
-#hero {
+#hero-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem 1rem 0;
+}
+#hero-image {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,38 +15,81 @@
     margin: 1rem;
 }
 
-#hero h1, #hero h2 {
+#hero-intro h1, #hero-intro h2 {
     font-family: 'Rubik', sans-serif;
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
-#hero h1 {
+#hero-intro h1 {
     color: #53917E;
 }
-#hero h2 {
+#hero-intro h2 {
     color: #4C6E64;  
 }
 
-#hero p {
-     font-size: 1rem;
+#hero-intro p {
+     font-size: 1.2rem;
      font-weight: normal;
      margin: 1rem;
      color: #4C6E64; 
 }
-#hero a {
+#hero-intro a {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: normal;
     text-decoration: none;
-    color: #EB9C5C;
+    color: white;
+    background:#EB9C5C;
+    font-weight: normal;
     border: 2px solid #EB9C5C;
     border-radius: 5px;
     padding: 0.75rem 1.25rem;
     margin: 1rem;
 }
+#hero-intro a:hover {
+    color:#EB9C5C;
+    background:white;
+    font-weight: bold;
+    border: 2px solid #EB9C5C;
+}
 
-#hero img {
+#hero-image img {
     width: 80%;
     border: 2px solid #4C6E64;
     margin: 1rem;
+    border-radius: 2.5%;
 }
+
+/* *** TABLET STYLES *** */
+@media only screen and (min-width: 550px) {
+    #hero-image img {
+        width: 60%;
+    }
+    
+}
+
+/* *** DESKTOP STYLES *** */
+@media only screen and (min-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        margin: 5rem auto;
+        max-width: 80%;
+    }
+    #hero-image, #hero-intro {
+        width: 50%;
+    }
+    #hero-image {
+        width: 50%;
+    }
+    #hero-image img {
+        width: 90%;
+    }
+    #hero-intro h1, #hero-intro h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.5rem;
+    }
+}
+
