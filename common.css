@@ -44,6 +44,14 @@ header nav a {
     color: black;
 }
 
+header nav a:hover {
+    font-family: 'Poppins',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
 #resume {
     background:#3B3C36;
     color:antiquewhite;

@@ -30,8 +30,8 @@ main article {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    border: 1.5px solid #3B3C36;
-    border-radius: 0.5rem;
+    border-bottom: 1.5px solid #3B3C36;
+    /* border-radius: 0.5rem; */
     margin: 1rem;
     width: 80%;
     max-width: 700px;
