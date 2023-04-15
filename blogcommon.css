@@ -5,6 +5,10 @@ main {
     align-items: center;
 }
 
+section {
+    margin-bottom: 0rem;
+}
+
 /* Blog nav Bar */
 #blog-nav {
     display: flex;
