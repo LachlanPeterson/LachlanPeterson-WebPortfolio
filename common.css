@@ -58,7 +58,7 @@ header nav a:hover {
 }
 
 /* Main Component  */
-p, a, h1, h2, h3, figcaption {
+p, a, h1, h2, h3, li, figcaption {
     font-family: 'Poppins', sans-serif;
 }
 
