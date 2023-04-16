@@ -1,14 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;600;700&family=Rubik:wght@300;700&display=swap');
 
+/* *** The common.css stylesheet is applied to every web page in my Portfolio, in-conjunction with their own individual CSS. This Common sheet has all the generic style changes across the whole website so I dont have to repeat styling changes on individual style sheets for content or components. Note that all style sheets default sizing will be Mobile, than any responsive changes will be outlined in Tablet and Desktop respectively *** */
+
+/* This Style sheet contains styling for the following Components: Header, Page Titles and Footer */
+
+/* Default styling */
+
+/* Box Sizing is used to include the padding and border within the elements total width/height */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* Setting body on each page to a flex container to allow for the use of flexbox  */
 body {
     display: flex;
     flex-direction: column;
+}
+
+/* Setting font family for varying elements */
+p, a, h1, h2, h3, li, figcaption {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 /* Header Component */
@@ -19,67 +32,46 @@ header {
     padding: 1rem 0;
     background: #53917E;
 }
-
 #branding {
     width: 30%; 
 }
-
 #logo-home {
     text-align: center;
 }
-
 header nav {
     display: flex;
     justify-content: space-around;
     width:100%;
     margin: 1rem 0 0;
-    
 }
-
 header nav a {
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
-    /* font-weight: bold; */
     text-decoration: none;
     font-size: 1.5rem;
     color: black;
 }
-
 header nav a:hover {
     font-family: 'Poppins',Arial, Helvetica, sans-serif;
     font-weight: bold;
-    /* text-decoration: underline; */
     font-size: 1.5rem;
     color: black;
 }
 
-#resume {
-    background:#3B3C36;
-    color:antiquewhite;
-}
-
-/* Main Component  */
-p, a, h1, h2, h3, li, figcaption {
-    font-family: 'Poppins', sans-serif;
-}
-
-    /* Titles for Each page */
-#page-titles h1 {
+/* Page Titles Component */
+#page-titles h1, #page-titles h2 {
     font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+#page-titles h1 {
     color: #53917E;
     font-size: 2rem;
     margin-top: 1rem;
-    text-align: center;
 }
-
 #page-titles h2 {
-    font-family: 'Rubik', sans-serif;
     color: #4C6E64;
     font-size: 1.8rem; 
     margin-bottom: 1rem;
-    text-align:center;
 }
-
-/* Hero Component */
 
 /* Social links Component */
 #social-links {
@@ -89,21 +81,17 @@ p, a, h1, h2, h3, li, figcaption {
     align-items: center;
     padding: 1rem 0;
 }
-
 #social-links p {
     color:black;
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    
 }
-
 #social-links nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
 #social-links img {
     width: 35px;
 }
@@ -115,7 +103,6 @@ footer {
     margin: .25rem 0 0;
     background:#3B3C36;
 }
-
 footer p {
     font-size: .9rem;
     color: whitesmoke;
@@ -123,6 +110,7 @@ footer p {
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 550px) {
+    /* Header Component */
     header {
         flex-direction: row;
         align-items: center;
@@ -148,6 +136,7 @@ footer p {
 
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 1000px) {
+    /* Header Component */
     header {
         justify-content: space-between;
     }

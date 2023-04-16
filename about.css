@@ -1,37 +1,29 @@
-/* Main content */
+/* The about.css stylesheet is only applied to the About Page */
+/* It contains styling for the following Components: About Me  */
+
+/* Main */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+p {
+    margin-bottom: 1rem;
+}
+footer p {
+    margin-bottom: 0rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
 section {
     display: flex;
     flex-direction: column;
     padding: 1rem 2rem;
 }
 
-
-#about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    order: 3
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-footer p {
-    margin-bottom: 0rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-/* Figure */
+/* About Me Component */
+/* Figure Section */
 #about-figure {
     display: flex;
     align-items: center;
@@ -44,19 +36,36 @@ h3 {
     border: 2px solid #4C6E64;
     padding: 0.5rem;
 }
-
 #about-figure figcaption {
     padding: 0 1rem;
 }
 
-/* Further Information */
+/* Content Section */
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: 3
+}
+#about-content {
+    order: 1;
+}
+
+/* Extra Info Section */
 #about-info {
     margin-bottom: 1rem;
+    order: 2;
+}
+#about-info img {
+    width: 2rem;
 }
 .info-bar {
     padding: 1rem 1rem 0 0;
     border-left: 1px solid black;
     padding-left: 0.5rem;
+}
+.info-bar img {
+    max-width: 40px;
 }
 .info-bar a {
     text-decoration: underline;
@@ -65,56 +74,48 @@ h3 {
 .info-bar a:hover {
     font-weight: bold;
 }
-.info-bar img {
-    max-width: 40px;
-}
-
-/* Content order */
-#about-content {
-    order: 1;
-}
-#about-info {
-    order: 2;
-}
-
-#about-info img {
-    width: 2rem;
-}
 
 /* *** Tablet *** */
 @media only screen and (min-width: 1000px) {
+    /* Main */
     main {
         margin: 0 auto 1rem;
         max-width: 80%;
     }
+
+    /* Through the use of this div, I am able to style the Content and Extra Info Section as a row, seperate from the Figure Section */
     #about-container {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
         
     }
+
+    /* Content Section */
+    #about-content {
+        width: 65%;
+        padding: 1rem 0;
+    } 
+
+    /* Extra Info Section */
     #about-info {
         width: 35%;
         min-width: 35%;
         order: 0;
         padding: 1rem 0;
-    }
-    #about-content {
-        width: 65%;
-        padding: 1rem 0;
-    }   
+    }  
 }
 
 /* *** Desktop *** */
 @media only screen and (min-width: 1300px) {
-#about-info {
-    width: 25%;
-    min-width: 25%;
-    order: 0;
-    padding: 1rem 0;
-}
-#about-content {
-    width: 75%;
-    padding: 1rem 0;
-}   
+    /* I changed the percentage taken up by each Section within the div for design purposes */
+     /* Content Section */
+     #about-content {
+        width: 75%;
+    } 
+    /* Extra Info Section */
+    #about-info {
+        width: 25%;
+        min-width: 25%;
+    }
 }

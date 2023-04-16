@@ -1,5 +1,8 @@
+/* The index.css stylesheet is only applied to the Index Page */
+/* It contains styling for the following Components: Hero */
 
 /* Hero Component */
+/* Introduction Section */
 #hero-intro {
     display: flex;
     flex-direction: column;
@@ -7,32 +10,23 @@
     text-align: center;
     margin: 1rem 1rem 0;
 }
-#hero-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 1rem;
-}
-
 #hero-intro h1, #hero-intro h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 1.8rem;
 }
-
 #hero-intro h1 {
     color: #53917E;
 }
 #hero-intro h2 {
     color: #4C6E64;  
 }
-
 #hero-intro p {
      font-size: 1.2rem;
      font-weight: normal;
      margin: 1rem;
      color: #4C6E64; 
 }
+/* Styling the Resume Button */
 #hero-intro a {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
@@ -53,6 +47,14 @@
     border: 2px solid #EB9C5C;
 }
 
+/* Image Section */
+#hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
 #hero-image img {
     width: 80%;
     border: 2px solid #4C6E64;
@@ -63,6 +65,7 @@
 
 /* *** TABLET STYLES *** */
 @media only screen and (min-width: 550px) {
+    /* Image Section */
     #hero-image img {
         width: 60%;
     }
@@ -71,6 +74,7 @@
 
 /* *** DESKTOP STYLES *** */
 @media only screen and (min-width: 1000px) {
+    /* By changing the flex direction of the main, I am able to position the Introduction and Image Section in a row within the Hero Component, whilst keeping their individual flex directions (column) */
     main {
         display: flex;
         flex-direction: row;
@@ -79,15 +83,19 @@
         margin: 5rem auto;
         max-width: 80%;
     }
+
+    /* Hero Component */
+    /* I want them to each section to take up half of the Component */
     #hero-image, #hero-intro {
         width: 50%;
     }
-    #hero-image {
-        width: 50%;
-    }
+
+    /* Image Section */
     #hero-image img {
         width: 90%;
     }
+
+    /* Introduction Section */
     #hero-intro h1, #hero-intro h2 {
         font-family: 'Rubik', sans-serif;
         font-size: 2.5rem;
