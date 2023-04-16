@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Poppins:wght@300;600;700&family=Rubik:wght@300;700&display=swap');
 
-/* *** The common.css stylesheet is applied to every web page in my Portfolio, in-conjunction with their own individual CSS. This Common sheet has all the generic style changes across the whole website so I dont have to repeat styling changes on individual style sheets for content or components. Note that all style sheets default sizing will be Mobile, than any responsive changes will be outlined in Tablet and Desktop respectively *** */
+/* The common.css stylesheet is applied to every web page in my Portfolio, in-conjunction with their own individual CSS stylesheet.  This Common sheet has all the generic style changes across the whole website so I dont have to repeat styling changes on individual style sheets for content or components. Note that all style sheets default sizing will be Mobile, than any responsive changes will be outlined in Tablet and Desktop respectively *** */
 
-/* This Style sheet contains styling for the following Components: Header, Page Titles and Footer */
-
-/* Default styling */
+/* This Style sheet contains styling for the following Components: Header, Page Titles, Social Links and Footer */
 
 /* Box Sizing is used to include the padding and border within the elements total width/height */
 * {

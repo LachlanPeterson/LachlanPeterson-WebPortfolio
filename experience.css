@@ -1,4 +1,7 @@
-/* Main Content Component */
+/* The experience.css stylesheet is only applied to the Experience Page */
+/* It contains styling for the following Components: Experience  */
+
+/* Main */
 main {
     display: flex;
     flex-direction: column;
@@ -6,6 +9,8 @@ main {
     padding: 0 1rem;
 }
 
+/* Experience Component */
+/* Section */
 #exp-container section {
     display: flex;
     flex-direction: column;
@@ -13,20 +18,6 @@ main {
     padding: 0 1rem;
     margin-bottom: 1rem;
 }
-
-main article {
-    width: 100%;
-}
-
-/* Commented out a div container as I realised it wasnt necessary */
-/* #exp-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-
-
 /* Articles */
 .exp-fsd {
     display: flex;
@@ -38,22 +29,17 @@ main article {
     width: 80%;
     max-width: 600px;
 }
-
 .exp-fsd p {
     margin-bottom: 1rem;
-    
 }
-
 .exp-fsd a {
     text-decoration: underline;  
     color: black;
 }
-
 .exp-fsd a:hover {
     text-decoration: underline;
     font-weight: bold;  
 }
-
 .exp-fsd img {
     width: 50%;
     padding: 0.5rem;
@@ -61,19 +47,18 @@ main article {
 .exp-fsd h3 {
     margin: 1rem 0;
 }
-/* *** TABLET *** */
-@media only screen and (min-width: 650px) {
-     }
-    .exp-fsd img {
-        width:50%;
-}
 
-/* *** DESKTOP *** */
+/* *** TABLET AND DESKTOP *** */
 @media only screen and (min-width: 1000px) {
+    /* Main */
     main {
         margin: 0 auto 5rem;
         max-width: 80%;
     }
+
+    /* Experience Component */
+    /* Section */
+    /* Used to align the Articles evenly within the Section */
     #exp-container Section {
         flex-direction: row;
         align-items: flex-start;
@@ -81,6 +66,7 @@ main article {
         padding: 0;
     }
 
+    /* Article */
     .exp-fsd {
         width: 25%;
         min-width: 200px;
@@ -89,12 +75,5 @@ main article {
     }
     .exp-fsd img {
         width: 100%;
-}
-
-/* Commented out a div container as I realised it wasnt necessary */
-/* #exp-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
+    }   
 }

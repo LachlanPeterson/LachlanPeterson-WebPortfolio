@@ -1,10 +1,15 @@
-/* Main Content Component */
+/* The blog.css stylesheet is only applied to the Blog Page (blog.html) */
+/* It contains styling for the following Components: Blog Preview  */
+
+/* Main */
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Blog Preview Component */
+/* Section */
 #blog-container section {
     display: flex;
     flex-direction: column;
@@ -13,39 +18,25 @@ main {
     margin-bottom: 1rem;
 }
 
-main article {
-    width: 100%;
-}
-/* Commented out a div container as I realised it wasnt necessary */
-/* #blog-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:50%;
-} */
-
-
-
-/* Blog Preview Section */
+/* Articles */
 .blog-previews {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 0 2rem;
     border-bottom: 1.5px solid #3B3C36;
-    /* border-radius: 0.5rem; */
     margin: 1rem;
     width: 80%;
     max-width: 700px;
 }
 .blog-previews figure {
+ /*Needed to align the Img and Figure within the Article */
 display: flex;
 flex-direction: column;
 align-items: center;
 }
-
 .blog-previews img {
-    width: 50%;
+    width: 65%;
     border-radius: 50%;
     border: 2px solid #EB9C5C;
     padding: 0.5rem;
@@ -53,19 +44,18 @@ align-items: center;
 .blog-previews h3 {
     margin: 1rem 0;
 }
-/* *** TABLET *** */
-@media only screen and (min-width: 750px) {
-     }
-    .blog-previews img {
-        width:65%;
-}
 
-/* *** DESKTOP *** */
+/* *** TABLET AND DESKTOP *** */
 @media only screen and (min-width: 1200px) {
+    /* Main */
     main {
         margin: 0 auto 5rem;
         max-width: 80%;
     }
+    
+    /* Blog Preview Component */
+    /* Section */
+    /* Used to align the Articles evenly within the Section */
     #blog-container Section {
         flex-direction: row;
         align-items: flex-start;
@@ -73,7 +63,7 @@ align-items: center;
         padding: 0;
     }
 
-   
+    /* Articles */
     .blog-previews {
         width: 20%;
         min-width: 200px;
@@ -82,11 +72,5 @@ align-items: center;
     }
     .blog-previews img {
         width: 100%;
-}
- /* Commented out a div container as I realised it wasnt necessary */
-    /* #blog-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    } */
+    }
 }
