@@ -17,11 +17,15 @@ main {
 main article {
     width: 100%;
 }
-#exp-container {
+
+/* Commented out a div container as I realised it wasnt necessary */
+/* #exp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+} */
+
+
 
 /* Articles */
 .exp-fsd {
@@ -33,6 +37,21 @@ main article {
     margin: 1rem;
     width: 80%;
     max-width: 600px;
+}
+
+.exp-fsd p {
+    margin-bottom: 1rem;
+    
+}
+
+.exp-fsd a {
+    text-decoration: underline;  
+    color: black;
+}
+
+.exp-fsd a:hover {
+    text-decoration: underline;
+    font-weight: bold;  
 }
 
 .exp-fsd img {
@@ -62,11 +81,6 @@ main article {
         padding: 0;
     }
 
-    #exp-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-    }
     .exp-fsd {
         width: 25%;
         min-width: 200px;
@@ -76,4 +90,11 @@ main article {
     .exp-fsd img {
         width: 100%;
 }
+
+/* Commented out a div container as I realised it wasnt necessary */
+/* #exp-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    } */
 }

@@ -11,13 +11,15 @@
     </head>
     
     <body>
-
-        <!-- Header -->
+        <!-- Header Component -->
+        <!-- This Component will feature across all pages of the website. It contains a Clickable Logo that takes users to the Home Page (Index), and the Main Navigation Menu. -->
         <header>
+            <!-- Clickable Logo to Navigate to Home -->
             <a id="logo-home" href="index.html">
                 <img id="branding" src="img/Logo.png" alt="LP Logo">
             </a>
-            <!-- Main navigation bar -->
+
+            <!-- Main Navigation Menu -->
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -26,26 +28,33 @@
            </nav>
         </header>
 
-        <!-- Main body content -->
+        <!-- Main Content of the Page (Contains: Hero Component) -->
         <main>
-            <!-- Hero section -->
+            <!-- Hero Component -->
+            <!-- This component will only feature on the Home Page. It consists of an Introduction and Image Section -->
+            <!-- Introduction Section (contains a Link to my Resume) -->
             <section id="hero-intro">
                 <h1>LACHLAN PETERSON</h1>
                 <h2>JUNIOR FULL STACK WEB DEVELOPER</h2>
-                <p>I'm currently studying a Diploma of Information Technology at Coder Academy, Australia. Welcome to my portfolio.  </p>
+                <p>I'm currently studying a Diploma of Information Technology at Coder Academy, Australia. Welcome to my Website Portfolio.  </p>
                 <a href="PETERSON Lachlan CV 2023.pdf" target="_blank">Check out my resume!</a>
             </section>
-            <!-- Had to split sections for Web overlay -->
+            
+            <!-- Hero Imagine Section  -->
             <section id="hero-image">
                 <img src="img/Hero.JPG" alt="Hero Image"/>   
             </section>
         </main>
 
-        <!-- Social Links above footer (full width) -->
+        <!-- Social Links Component -->
+        <!-- This Component will sit above the Footer (full width) and feature across all pages of the website -->
         <section id="social-links">
-            <!-- Layout container (Used to align the nav to the paragraph width) -->
+            <!-- A div was needed/used as a Layout Container (Used to align the Social Links Nav to the width of the Paragraph text) -->
             <div>
+                <!-- Paragraph Text -->
                 <p>Connect with me on Social Media</p>
+
+                <!-- Social Links Navigation -->
                 <nav>
                     <a href="https://www.facebook.com/profile.php?id=100091930595861" target="_blank"><img src="img/Facebook_black.png" alt="Facebook"/></a>
                     <a href="https://twitter.com/LachlanPetersCA" target="_blank"><img src="img/Twitter_black.png" alt="Twitter"/></a>
@@ -56,10 +65,10 @@
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Footer Component -->
+        <!-- This component will sit across the bottom of all web pages -->
         <footer>
             <p>&copy; 2023 Lachlan Peterson</p>
         </footer>
-
     </body>
 </html>

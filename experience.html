@@ -11,87 +11,79 @@
     </head>
     
     <body>
-
-        <!-- Header -->
+        <!-- Header Component -->
         <header>
+            <!-- Clickable Logo to Navigate Home -->
             <a id="logo-home" href="index.html">
                 <img id="branding" src="img/Logo.png" alt="LP Logo">
             </a>
-            <!-- Main navigation bar -->
+
+            <!-- Main Navigation Menu -->
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="experience.html">Experience</a>
                 <a href="blog.html">Blog</a>
            </nav>
-
         </header>
 
-        <!-- Main body content -->
+        <!-- Main Content of the Page (Contains: Page Title and Experience Components) -->
         <main>
+            <!-- Page Title Component -->
             <article id="page-titles">
                 <h1>EXPERIENCE</h1>
                 <h2>MY EXPERIENCE WITH FULL STACK DEVELOPMENT</h2>
             </article>
 
-            <!-- Container for articles so I can RD with flexbox -->
+            <!-- Experience Component -->
+            <!-- This component only features on the Experience page. It Consists of a Section, with 4 Different Articles nested within -->
             <div id="exp-container">
-                <!-- Class articles so I can style them all easily. -->
+            <!-- A div was used as a Layout Container for the Section (Used to align the articles evenly in columns within the Section for the Desktop view) -->
                 <section>
-                <article class ="exp-fsd">
-                    <img src="img/Ubuntu_Icon.png" alt="Terminal Icon">
-                    <h3>Terminal Programs</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quibusdam?</p>
-                    <ol>
-                        <li>Knowledge of basic command line concepts</li>
-                        <li>Ability to use common terminal commands</li>
-                        <li>c</li>
-                    </ol>
-                </article>
+                    <!-- Ubuntu Article -->
+                    <article class ="exp-fsd">
+                    <!-- Articles have been classed for styling purposes (experience-full stack dev) -->
+                        <img src="img/Ubuntu_Icon.png" alt="Terminal Icon">
+                        <h3>Terminal Programs</h3>
+                        <p>Terminals are text-based prompt environments with an input and output. Its important for Developers as it allows us to enter commands or prompts that the computer can process, perform and display the result. Although its the most bare-bones way to interact with a computer, its simplicity is also its strength. 
+                        <p>My first exposure to Terminal programs was at Coder Academy and I now have a good understanding of basic command line concepts and common terminal commands. When creating this website I used Ubuntu 22.10 for my Terminal.</p> 
+                    </article>
 
-                <article class ="exp-fsd">
-                    <img src="img/Html_CSS_Icon.png" alt="HTML and CSS Icon">
-                    <h3>HTML 5 and CSS 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quibusdam?</p>
-                    <ol>
-                        <li>Knowledge of basic command line concepts</li>
-                        <li>Ability to use common terminal commands</li>
-                        <li>c</li>
-                    </ol>
-                </article>
+                    <!-- HTML & CSS Article -->
+                    <article class ="exp-fsd">
+                        <img src="img/Html_CSS_Icon.png" alt="HTML and CSS Icon">
+                        <h3>HTML 5 and CSS 3</h3>
+                        <p>Hypertext Markup Language (HTML) and Cascading Style Sheets (CSS) are two of the cornerstone technologies that make up all web pages. HTML is often viewed as the skeleton struction of a web page and often holds static or raw content. That's were CSS comes in, and by applying style sheets you are able to create aesthetically pleasing web pages through visual and layout styling.</p>
+                        <p> Through my understanding and application of HTML and CSS, I was able to build this very Portfolio. Underneath it all, you will find that I have used Semantic HTML, whilst also having an understanding of different elements and structures. To style the website in CSS I had to use various syntax and selectors and needed a great understanding of Flexbox modelling, Display positioning and Responsive Design. I can safely openly admit that there were some struggles with the build, but because of that, I am confident in troubleshooting and optimising code.</p>   
+                    </article>
 
-                <article class ="exp-fsd">
-                    <img src="img/Premiere.png" alt="Adobe Premiere Icon">
-                    <h3>Adobe Premiere</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quibusdam?</p>
-                    <ol>
-                        <li>Knowledge of basic command line concepts</li>
-                        <li>Ability to use common terminal commands</li>
-                        <li>c</li>
-                    </ol>
-                </article>
+                    <!-- Adobe Premiere Article -->
+                    <article class ="exp-fsd">
+                        <img src="img/Premiere.png" alt="Adobe Premiere Icon">
+                        <h3>Adobe Premiere</h3>
+                        <p>Adobe Premiere is a professional time-line based video editing software that is designed for post-production video editing. As quoted by Adobe, "Its equipped with a suite of powerful editing tools for content creators and filmmakers to organize and edit video files, enhance and fine-tune audio, and edit image quality" </p>
+                        <p>I've had some exposure over the years with Adobe Premiere in School, as well as editing gaming clips into montages or funny moments. If you enjoy League of Legends and want to watch a quick Youtube short that I edited, <a href="https://www.youtube.com/shorts/D6mujb1KbKc" target="_blank">Click Here</a></p> 
+                    </article>
 
-                <article class ="exp-fsd">
-                    <img src="img/Git_Icon.png" alt="Git Icon">
-                    <h3>Git</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quibusdam?</p>
-                    <ol>
-                        <li>Knowledge of basic command line concepts</li>
-                        <li>Ability to use common terminal commands</li>
-                        <li>c</li>
-                    </ol>
-                </article>  
-            </section>
-            </div>
-
-            
+                    <!-- Git Article -->
+                    <article class ="exp-fsd">
+                        <img src="img/Git_Icon.png" alt="Git Icon">
+                        <h3>Git</h3>
+                        <p>Git is a Version control system that allows us to track changes and back-up files in a project. Understanding and using Git is essential for any IT Developers, as it greatly facilitates group work. It can help increase work-flow speed, can be securely stored online and supports non-linear workflows.</p>
+                        <p> I not only have a basic understand of git concepts, but I am able to implemenet version control with git commands in Terminal Programs. Whilst building my portfolio, I applied version control techniques to keep track of changes, work on a local and remote repo, and updated my project from my desktop and laptop when required.</p> 
+                    </article>  
+                </section>
+            </div> 
         </main>
 
-        <!-- Social Links above footer (full width) -->
+        <!-- Social Links Component -->
         <section id="social-links">
-            <!-- Layout container (Used to align the nav to the paragraph width) -->
+            <!-- A div was needed/used as a Layout Container (Used to align the Social Links Nav to the width of the Paragraph text) -->
             <div>
+                <!-- Paragraph Text -->
                 <p>Connect with me on Social Media </p>
+
+                <!-- Social Links Navigation -->
                 <nav>
                     <a href="https://www.facebook.com/profile.php?id=100091930595861" target="_blank"><img src="img/Facebook_black.png" alt="Facebook"/></a>
                     <a href="https://twitter.com/LachlanPetersCA" target="_blank"><img src="img/Twitter_black.png" alt="Twitter"/></a>
@@ -102,10 +94,9 @@
             </div>
         </section>
 
-        <!-- Footer -->
+        <!-- Footer Component -->
         <footer>
             <p>&copy; 2023 Lachlan Peterson</p>
         </footer>
-
     </body>
 </html>
